@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-sora: "Sora", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --font-grotesk: "Space Grotesk", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    color-scheme: dark;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+@layer base {
+    body {
+        overflow-x: hidden;
+        @apply font-poppins bg-n-0 text-n-10 dark:bg-n-11 dark:text-n-2 transition-colors duration-300;
+    }
+}
+
+.input-box {
+    @apply w-full flex justify-between gap-3 text-sm text-black bg-n-1 dark:bg-n-10 dark:text-n-0 rounded px-4 py-3 mb-4 mt-3 border border-slate-200 outline-none;
+}
+
+.btn-primary {
+    @apply w-full text-sm font-medium text-n-1 bg-n-10 shadow-n-11/5 p-[10px] rounded-md my-1 hover:bg-n-10/15 hover:text-n-10 dark:bg-n-6 dark:text-n-10 hover:dark:bg-n-2/80
+}
+
+.card {
+    @apply bg-n-1 dark:bg-n-10 p-6 rounded-2xl shadow-md shadow-n-3 dark:shadow-n-8 border border-n-3/50 dark:border-n-7/50;
+}
+
+.card-btn {
+    @apply flex items-center gap-3 text-[12px] font-medium text-n-1 hover:text-n-8 bg-n-7 hover:bg-n-3 px-4 py-1.5 rounded-lg border border-n-3/50 cursor-pointer;
+}
+
+.add-btn {
+    @apply flex items-center gap-1.5 text-xs md:text-sm font-medium text-n-1 bg-n-7 dark:text-n-8 whitespace-nowrap dark:bg-n-1 border dark:border-n-3 rounded-lg py-2 px-4 cursor-pointer;
+}
+
+.add-btn-fill {
+    @apply text-white bg-n-9 dark:bg-n-1 dark:text-n-8;
+}
