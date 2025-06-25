@@ -39,3 +39,4 @@ frontend/.env
 # Optional: Ignore production uploads (If you handle file uploads later)
 uploads/
 public/uploads/
+backend/uploads/
