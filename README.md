@@ -15,7 +15,7 @@ An intuitive **Expense Tracker** web application built with the **MERN Stack (Mo
 - ✅ **Protected Routes** (Only logged-in users can manage transactions)
 - ✅ **Light-Dark Theme Toggle Option**
 
----
+
 
 ## 🛠️ Tech Stack
 
@@ -25,9 +25,7 @@ An intuitive **Expense Tracker** web application built with the **MERN Stack (Mo
 | Tailwind CSS | Express.js | Mongoose | REST API           |
 | Axios        |            |          | Recharts           |
 
----
 
----
 
 ## 🛠️ Installation
 
